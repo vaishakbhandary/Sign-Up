@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Varela Round', sans-serif;
+  background-color: #151630;
+
+}
+.form{
+  background-image: linear-gradient(#1319ff,#0145ff);
+  width: 400px;
+  height:500px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  border-radius: 16px ;
+  padding:120px,50px;
+  box-shadow: 2px 2px 8px #000000;
+}
+.img-overlay::before{
+  content:'';
+  background-image: url("https://cdn.pixelbay.com/photo/2017/09/06/13/18/mosaic-2721424_960_720.jpg");
+  position:absolute;
+  left:0;
+  top:0;
+  opacity: 0.18;
+  width: 400px;
+  height:600px;
+  border-radius: 16px;
+  z-index:-1;
+
+}
+.icon{
+  position:absolute;
+  top:20px;
+  right:20px;
+  color:rgba(255, 255,255, 0.5);
+}
+.form h1{
+  color:white;
+  font-size:1rem;
+  text-align: left;
+  margin-bottom: 3rem;
+  padding-top: 50px;
+  padding-left: 45px;
+
+}
+.inputs{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 45px;
+  color:white;
+  margin-bottom: 1.5rem;
+  font-size:0.7rem;
+  border-bottom: 1px solid rgba(231, 231,231, 0.0);
+
+}
+.input:hover{
+  border-bottom: 3px solid #fff;
+  transition:0.2s ease-in-out;
+}
+#email,#email::placeholder{
+  width: 100%;
+  border:none;
+  background:none;
+  outline:none;
+  color:rgba(255, 255,255, 0.5);
+  margin-top:0.5rem;
+  font-size:0.8rem;
+  padding-bottom:0.5rem;
+
+}
+#password,#password::placeholder{
+  width: 100%;
+  border:none;
+  background:none;
+  outline:none;
+  color:rgba(255, 255,255, 0.5);
+  margin-top:0.5rem;
+  font-size:0.8rem;
+  padding-bottom:0.5rem;
+
+}
+#password2,#password2::placeholder{
+  width: 100%;
+  border:none;
+  background:none;
+  outline:none;
+  color:rgba(255, 255,255, 0.5);
+  margin-top:0.5rem;
+  font-size:0.8rem;
+  padding-bottom:0.5rem;
+
+}
+.Button{
+  width:80%;
+  background:white;
+  border:none;
+  border-radius: 30px;
+  padding:8px 8px;
+  font-size:0.9rem;
+  margin-bottom:1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#0145ff;
+  outline:none;
+  cursor: pointer;
+}
+.Button:hover{
+  width:80%;
+  background:transparent;
+  border:2px solid #fff;
+  border-radius: 30px;
+  padding:8px 8px;
+  font-size:0.9rem;
+  margin-bottom:1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#fff;
+  outline:none;
+  transition:0.3s ease-in-out;
+  cursor: pointer;
+}
+p{
+  color:rgba(255, 255,255, 0.5);
+  font-size:0.8rem;
+}
